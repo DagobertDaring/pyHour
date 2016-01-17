@@ -1,0 +1,26 @@
+x = 0
+mark = 0
+special = '['
+DateYear = 2016
+DateMonth = 1
+DateDay = 1
+DateHours = 0
+DateMinutes = 0
+MinutesWorked = 0
+
+while x < len(input):
+	if input[x] is special:
+		if input[mark+21:mark+28] ==  "started":
+			print "yes1"
+		elif input[mark+21:mark+28] == "stopped":
+			print "yes"
+		mark = x
+	x=x+1
+
+print mark;
+print input[mark+21:mark+28]
+print input
+print len(input)
+print MinutesWorked
+
+
