@@ -1,14 +1,15 @@
-pyHour.py
-Version 1.0
+pyHour.py Version 1.0
 
 See "LICENSE" for license and redristibuting
 
 
------Misc notes-----
+Misc notes
+
+
 this script provides very simple and easy functionality for tracking minutes in a log (it will be extended)
 
 
------Using the script-----
+Using the script
 
 pipeline a textfile(notation see below) into the script for example
 
@@ -17,7 +18,9 @@ pipeline a textfile(notation see below) into the script for example
 if using the right notation it will provide you with the correct amount of minutes
 
 
------notation-----
+notation
+
+
 EBNF:
 
 	G = (V,T,P, Log)
@@ -35,7 +38,7 @@ EBNF:
 
 	message = {literal}
 	letter = "a"|...|"z"|"A"|...|"Z"
-	literal = digit|letter
+	literal = digit|letter|" "
 
 Example
 
